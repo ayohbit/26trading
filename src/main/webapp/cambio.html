@@ -1,0 +1,13 @@
+<div id="{{id}}" class="ticker_holder">
+	<div class="ticker" style="left:{{carrossel}}px;">
+		<div class="{{cambio.percent_change > 0?'clstsu':'clstsd'}} ticker_pill" ng-repeat="cambio in cambios">
+			<div class="inner_pill cl_tickername">{{cambio.title}}</div>
+			<div class="inner_pill cl_price">
+				<span class="last_price">{{cambio.last}}</span>
+			</div>
+			<div class="inner_pill">
+				<span class="value_change">{{cambio.percent_change}}%</span>
+			</div>
+		</div>
+	</div>
+</div>

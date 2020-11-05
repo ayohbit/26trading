@@ -1,0 +1,10 @@
+<div id="{{id}}">
+	<canvas id="{{id}}_inner" width="300" height="300"></canvas>
+	<ul class="{{id}}-legend\">
+		<li ng-repeat="dataset in datasets" style="list-style-type: none;">
+			<span style="background-color:{{dataset.strokeColor}};">
+				{{dataset.label}}
+			</span>
+		</li>
+	</ul>
+</div>

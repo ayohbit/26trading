@@ -1,0 +1,8 @@
+<section id="{{id}}">
+	<span class="time">
+		<span class="hours">{{date.getHours() | pad}}</span>
+		:<span class="minutes">{{date.getMinutes() | pad}}</span>
+	</span><br/>
+	<span class="dia">{{date.getDayWeekend()}},</span><br/>
+	<span class="calendario">{{date.getDate()}} de {{date.getMonthName()}} de {{date.getFullYear()}}</span>
+</section>
